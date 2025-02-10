@@ -9,6 +9,10 @@
   // background: $mushroomNeutral;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 html.menu-open, body.menu-open  {
   overflow: hidden;
 }
