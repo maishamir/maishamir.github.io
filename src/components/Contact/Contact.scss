@@ -15,6 +15,16 @@
   color: #fbf6e0;
   display: flex;
   
+
+  &__subtitle {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+
+    @include lgDesktop {
+      font-size: 2rem;
+      margin-bottom: 0;
+    }
+  }
   
 
   &__content {
@@ -29,6 +39,7 @@
     background: rgba(255, 255, 255, 0.2); /* Transparent background for frosted effect */
     border-radius: 12px; /* Optional - rounded edges */
     padding: 1.5rem 2rem;
+    // font-size: 5rem;
 
     @include lgDesktop {
       flex-direction: row;

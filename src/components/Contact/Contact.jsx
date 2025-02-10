@@ -36,8 +36,8 @@ function Contact() {
     <section className="contact" id="contact">
       <div className="contact__content">
         <div className="contact__blurb">
-          <h1>I'm always up for a chat!</h1>
-          <p>
+          <h1 className="contact__subtitle">I'm always up for a chat!</h1>
+          <p className="">
             If you ever want to meet for a virtual coffee, or just want to have
             a quick chat, you can reach out to me on any of the socials below or
             send me a quick message here!
