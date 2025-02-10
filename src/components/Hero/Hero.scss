@@ -9,11 +9,16 @@
   &__title {
     // color: #fbf6e0;
     font-weight: 400;
-    font-size: 4rem;
+    // font-size: 4rem;
+    font-size: 2.5rem;
+    // margin: 0 1.35rem;
+    @include lgDesktop {
+      font-size: 4rem;
+    }
     &-italic {
       font-family: "Lobster";
       font-weight: lighter;
-      font-size: 4.2rem;
+      // font-size: 4.2rem;
     }
   }
 
@@ -33,27 +38,35 @@
     flex-direction: column;
     gap: 2rem;
 
+
+
     a {
       text-decoration: none;
       color: #fbf6e0;
-      padding: 1rem 2rem;
-      border: 2px solid white;
+      padding: 0.5rem 1rem;
+
+      border: 2px solid #fbf6e0;
       // width: 33%;
       // border-radius:1rem;
       margin: 0 auto;
-      transition: all 200ms;
+
+      @include lgDesktop {
+        padding: 1rem 2rem;
+        transition: all 200ms;
+      }
 
       &:hover {
-        background: rgba(251, 246, 224, 0.5);
-        border-radius: 2rem;
+        @include lgDesktop {
+          background: rgba(251, 246, 224, 0.5);
+          border-radius: 2rem;
+        }
       }
     }
-    
-      
   }
 
   &__blurb {
-    font-size: 1.5rem;
+    // font-size: 1.5rem;
+    font-size: 1.25rem;
   }
   &__img {
     object-fit: cover;
@@ -64,7 +77,6 @@
 
   &__resume {
     text-transform: uppercase;
-
   }
 
   &__arrow {
