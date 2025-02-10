@@ -41,7 +41,13 @@ function ProjectCard({
 }
 
 function Project() {
+
+  //disable card hover animation on mobile devices
+  var isTouchDevice = () => 'ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0
+
+
   const handleMouseMove = (e) => {
+    if (isTouchDevice()) return;
     const card = e.currentTarget;
     const cardWidth = card.offsetWidth;
     const cardHeight = card.offsetHeight;
@@ -57,6 +63,7 @@ function Project() {
   };
 
   const handleMouseLeave = (e) => {
+    if (isTouchDevice()) return
     const card = e.currentTarget;
     card.style.transform = "rotateX(0deg) rotateY(0deg)";
   };
