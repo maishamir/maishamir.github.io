@@ -1,8 +1,8 @@
 import React from "react";
 import heroImg from "../../assets/images/Maisha Mir_LI.jpg";
-import arrow from "/Users/maishamir/Documents/mySite-react/public/icons/arrow button circle.svg"
+import arrow from "/icons/arrow button circle.svg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import resume from "/Users/maishamir/Documents/mySite-react/src/assets/Maisha Mir - Resume.pdf"
+import resume from "../../assets/Maisha Mir - Resume.pdf"
 import "./Hero.scss";
 
 function Hero() {

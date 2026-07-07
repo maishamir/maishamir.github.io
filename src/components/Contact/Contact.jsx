@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import "./Contact.scss";
-import ghIcon from "/Users/maishamir/Documents/mySite-react/public/icons/github_icon.svg";
-import liIcon from "/Users/maishamir/Documents/mySite-react/public/icons/linkedin_icon.svg";
+import ghIcon from "/icons/github_icon.svg";
+import liIcon from "/icons/linkedin_icon.svg";
 
 function Contact() {
   const form = useRef();
